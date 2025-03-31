@@ -23,8 +23,9 @@ public class Comedy extends Movie {
     @Override
     public boolean equals(Object other) {
         if (this == other) return true;
-        if (!(other instanceof Comedy that)) return false;
+        if (!(other instanceof Comedy)) return false;
         if (!super.equals(other)) return false;
+        Comedy that = (Comedy) other;
         return this.genre.equals(that.genre);
     }
 

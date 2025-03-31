@@ -8,20 +8,16 @@ public class Comedy extends Movie {
         this.genre = genre;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
+    public String getGenre() {return genre;}
+    public void setGenre(String genre) {this.genre = genre;}
 
     @Override
     public String toString() {
-        String sb = "Comedy{" + super.toString() +
-                ", genre='" + genre + '\'' +
-                '}';
-        return sb;
+        final StringBuilder sb = new StringBuilder("Comedy{");
+        sb.append(super.toString());
+        sb.append(", genre='").append(genre).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     @Override

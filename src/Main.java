@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         Movie wonderfulLife = new Movie("It's a Wonderful life", 1946, new Person("Copra", "Frank"));
+        wonderfulLife.addCastMember(new Person("Reed", "Donna"));
+        wonderfulLife.addCastMember(new Person("Stewart", "James"));
         System.out.println(wonderfulLife);
 
         Documentary shackletonSurvival = new Documentary("Shackleton: The Greatest Story of Survival", 2022,

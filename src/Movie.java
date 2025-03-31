@@ -37,9 +37,9 @@ public class Movie {
         Movie that = (Movie) other;
 
         // make sure the casts of each movie are the same
-        if(that.cast.size() != cast.size()) return false;
-        for(Person person : cast) {
-            if(!that.cast.contains(person)) return false;
+        if(that.cast.size() != this.cast.size()) return false;
+        for(Person member : cast) {
+            if(!that.cast.contains(member)) return false;
         }
 
         // verify the other details of the two movies are the same

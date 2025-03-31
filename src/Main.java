@@ -1,5 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Movie wonderfulLife = new Movie("It's a Wonderful life", 1946, new Person("Copra", "Frank"));
+        System.out.println(wonderfulLife);
+
+        Documentary shackletonSurvival = new Documentary("Shackleton: The Greatest Story of Survival", 2022,
+                new Person("Hansel","Bobbi"), new Person("Whenham","David"));
+        System.out.println(shackletonSurvival);
+
+        Comedy royalIsh = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");
+        royalIsh.addCastMember(new Person("Sakura","Nichole"));
+        royalIsh.addCastMember(new Person("Dempsey","Brendan"));
+        System.out.println(royalIsh);
+
+        Comedy another = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");
+        royalIsh.addCastMember(new Person("Sakura","Nichole"));
+        royalIsh.addCastMember(new Person("Dempsey","Brendan"));
+        System.out.println(royalIsh.equals(another));
+
     }
 }

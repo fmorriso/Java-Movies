@@ -12,10 +12,15 @@ public class Main {
         royalIsh.addCastMember(new Person("Dempsey","Brendan"));
         System.out.println(royalIsh);
 
-        Comedy another = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");
+        Comedy exactDuplicate = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");
+        exactDuplicate.addCastMember(new Person("Sakura","Nichole"));
+        exactDuplicate.addCastMember(new Person("Dempsey","Brendan"));
+        System.out.println(royalIsh.equals(exactDuplicate));
+
+        Comedy almostTheSame = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");
         royalIsh.addCastMember(new Person("Sakura","Nichole"));
-        royalIsh.addCastMember(new Person("Dempsey","Brendan"));
-        System.out.println(royalIsh.equals(another));
+        // royalIsh.addCastMember(new Person("Dempsey","Brendan"));
+        System.out.println(royalIsh.equals(almostTheSame));
 
     }
 }

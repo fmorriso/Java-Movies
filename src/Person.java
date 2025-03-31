@@ -20,8 +20,10 @@ public class Person {
     @Override
     public boolean equals(Object other) {
         if (this == other) return true;
-        if (!(other instanceof Person that)) return false;
-        return this.firstName.equals(that.firstName) & this.lastName.equals(that.lastName);
+        if (!(other instanceof Person)) return false;
+        Person that = (Person) other;
+        return this.firstName.equals(that.firstName)
+            && this.lastName.equals(that.lastName);
     }
 
     @Override

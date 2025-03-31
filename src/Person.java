@@ -31,12 +31,12 @@ public class Person {
         return Objects.hash(lastName, firstName);
     }
 
-
     @Override
     public String toString() {
-        String sb = "Person{" + "lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                '}';
-        return sb;
+        StringBuilder sb = new StringBuilder("Person{")
+                .append("lastName='").append(lastName).append('\'')
+                .append(", firstName='").append(firstName).append('\'')
+                .append('}');
+        return sb.toString();
     }
 }

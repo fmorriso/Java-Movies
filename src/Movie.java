@@ -50,12 +50,12 @@ public class Movie {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Movie{");
-        sb.append("title='").append(title).append('\'');
-        sb.append(", year=").append(year);
-        sb.append(", director=").append(director);
-        sb.append(", cast=").append(cast);
-        sb.append('}');
+        StringBuilder sb = new StringBuilder("Movie{")
+                .append("title='").append(title).append('\'')
+                .append(", year=").append(year)
+                .append(", director=").append(director)
+                .append(", cast=").append(cast)
+                .append('}');
         return sb.toString();
     }
 }

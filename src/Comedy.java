@@ -13,10 +13,10 @@ public class Comedy extends Movie {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Comedy{");
-        sb.append(super.toString());
-        sb.append(", genre='").append(genre).append('\'');
-        sb.append('}');
+        StringBuilder sb = new StringBuilder("Comedy{")
+                .append(super.toString())
+                .append(", genre='").append(genre).append('\'')
+                .append('}');
         return sb.toString();
     }
 

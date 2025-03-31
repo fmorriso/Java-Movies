@@ -5,6 +5,8 @@ public class Main {
 
         Documentary shackletonSurvival = new Documentary("Shackleton: The Greatest Story of Survival", 2022,
                 new Person("Hansel","Bobbi"), new Person("Whenham","David"));
+        shackletonSurvival.addCastMember(new Person("Degas","Rupert"));
+        shackletonSurvival.addCastMember(new Person("Jarvis","Time"));
         System.out.println(shackletonSurvival);
 
         Comedy royalIsh = new Comedy("Royal-ish", 2021, new Person("Bobb","Roger"), "Romantic Comedy");

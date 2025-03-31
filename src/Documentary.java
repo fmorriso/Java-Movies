@@ -14,10 +14,11 @@ public class Documentary extends Movie {
 
     @Override
     public String toString() {
-        String sb = "Documentary{" + super.toString() +
-                ", narrator=" + narrator +
-                '}';
-        return sb;
+        final StringBuilder sb = new StringBuilder("Documentary{");
+        sb.append(super.toString());
+        sb.append(", narrator=").append(narrator);
+        sb.append('}');
+        return sb.toString();
     }
 
     @Override

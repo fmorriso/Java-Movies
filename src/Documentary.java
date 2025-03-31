@@ -9,13 +9,8 @@ public class Documentary extends Movie {
         this.narrator = narrator;
     }
 
-    public Person getNarrator() {
-        return narrator;
-    }
-
-    public void setNarrator(Person narrator) {
-        this.narrator = narrator;
-    }
+    public Person getNarrator() {return narrator;}
+    public void setNarrator(Person narrator) {this.narrator = narrator;}
 
     @Override
     public String toString() {

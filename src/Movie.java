@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Movie {
     private String title;
@@ -27,7 +28,7 @@ public class Movie {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(title, year, director, cast);
     }
 
     @Override
